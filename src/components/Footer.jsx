@@ -38,7 +38,7 @@ const Footer = () => {
                     </div>
                     <div className="contact-footer-item">
                         <Mail size={18} />
-                        <p>info@gsshorthand.com</p>
+                        <p>contact@edusparkinstitute.com</p>
                     </div>
                 </div>
 

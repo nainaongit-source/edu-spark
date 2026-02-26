@@ -98,7 +98,7 @@ const Courses = () => {
                                 <div className="icon-circle"><Mail className="icon" /></div>
                                 <div>
                                     <h4>EMAIL</h4>
-                                    <p>info@gsshorthand.com</p>
+                                    <p>contact@edusparkinstitute.com</p>
                                 </div>
                             </div>
                         </div>
