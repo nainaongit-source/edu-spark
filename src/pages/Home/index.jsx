@@ -15,7 +15,7 @@ const Home = () => {
                         transition={{ duration: 0.8 }}
                         className="hero-text"
                     >
-                        <span className="badge">BEST SHORTHAND INSTITUTE IN DELHI</span>
+                        <span className="badge">BEST SHORTHAND INSTITUTE IN ABHAYAPURI</span>
                         <h1 className="hero-title">
                             Fast Track Your <br />
                             <span>Steno Career</span>

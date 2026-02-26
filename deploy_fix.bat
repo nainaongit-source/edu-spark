@@ -18,7 +18,7 @@ echo.
 echo Step 3: Committing fixes...
 git add .
 git commit -m "Fix: Corrected location to Abhayapuri and fixed deployment permissions"
-echo [OK] Changes committed.
+echo [OK] Changes committed (Location Fixed to Abhayapuri).
 echo.
 echo Step 4: Pushing to GitHub...
 echo.
@@ -29,5 +29,6 @@ git push origin main
 echo.
 echo ========================================================
 echo   DONE! Vercel should be building your site now.
+echo   Check your site at your Vercel URL.
 echo ========================================================
 pause
