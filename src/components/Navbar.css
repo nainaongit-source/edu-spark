@@ -1,0 +1,125 @@
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 1.25rem 0;
+    z-index: 1000;
+    transition: all 0.3s ease;
+    background: transparent;
+}
+
+.navbar.scrolled {
+    padding: 0.75rem 0;
+    background: var(--white);
+    box-shadow: var(--shadow-sm);
+}
+
+.nav-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-family: var(--font-heading);
+    font-size: 1.5rem;
+    font-weight: 900;
+    color: var(--white);
+    text-transform: uppercase;
+}
+
+.navbar.scrolled .logo {
+    color: var(--primary);
+}
+
+.logo span {
+    color: var(--accent);
+    font-weight: 700;
+}
+
+.navbar.scrolled .logo span {
+    color: var(--secondary);
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.nav-links a {
+    font-family: var(--font-heading);
+    font-weight: 700;
+    font-size: 0.85rem;
+    color: var(--white);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.navbar.scrolled .nav-links a {
+    color: var(--text-dark);
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+    color: var(--accent) !important;
+}
+
+.navbar.scrolled .nav-links a:hover,
+.navbar.scrolled .nav-links a.active {
+    color: var(--secondary) !important;
+}
+
+.nav-cta {
+    background-color: var(--secondary);
+    color: var(--white) !important;
+    padding: 0.6rem 1.25rem;
+    border-radius: var(--border-radius);
+    font-size: 0.8rem !important;
+}
+
+.nav-cta:hover {
+    background-color: var(--primary);
+    transform: translateY(-2px);
+}
+
+.mobile-toggle {
+    display: none;
+    background: none;
+    border: none;
+    color: var(--white);
+    cursor: pointer;
+}
+
+.navbar.scrolled .mobile-toggle {
+    color: var(--primary);
+}
+
+@media (max-width: 768px) {
+    .mobile-toggle {
+        display: block;
+    }
+
+    .nav-links {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 75%;
+        height: 100vh;
+        background: var(--white);
+        flex-direction: column;
+        justify-content: center;
+        transition: right 0.4s ease;
+        box-shadow: -5px 0 15px rgba(0, 0, 0, 0.1);
+    }
+
+    .nav-links.active {
+        right: 0;
+    }
+
+    .nav-links a {
+        color: var(--text-dark) !important;
+        font-size: 1.1rem;
+    }
+}
